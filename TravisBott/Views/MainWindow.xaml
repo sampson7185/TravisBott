@@ -1,0 +1,22 @@
+﻿<Window x:Class="TravisBott.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TravisBott"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="ConnectText" Text="Enter Slack Key:" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center"> </TextBlock>
+        <TextBox x:Name="SlackKeyBox" Grid.Row="0" Grid.Column="1" Background="#FFC1BCBC" VerticalAlignment="Center"> </TextBox>
+        <Button x:Name="ConnectButton" Content="Connect" Grid.Row="1" Grid.ColumnSpan="2" Background="Green"></Button>
+    </Grid>
+</Window>
